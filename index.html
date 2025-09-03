@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Premier League Interactive Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Premier League Hub ⚽</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="modeToggle">Switch to Dark Mode</button>
+
+  <!-- Live Score Counter -->
+  <section>
+    <h2>Live Score Counter</h2>
+    <p>Arsenal 🟥 <span id="arsenalScore">0</span> - <span id="chelseaScore">0</span> 🟦 Chelsea</p>
+    <button id="arsenalBtn">+1 Arsenal Goal</button>
+    <button id="chelseaBtn">+1 Chelsea Goal</button>
+  </section>
+
+  <!-- Collapsible FAQ Section -->
+  <section>
+    <h2>Premier League FAQ</h2>
+    <p><a href="#" id="faqToggle">Click to Show/Hide FAQ</a></p>
+    <div id="faq" style="display: none;">
+      <p><strong>Q:</strong> Who won the 2022/23 EPL? <br><strong>A:</strong> Manchester City 🏆</p>
+      <p><strong>Q:</strong> Who has the most EPL titles? <br><strong>A:</strong> Manchester United (13)</p>
+    </div>
+  </section>
+
+  <!-- Custom Form -->
+  <section>
+    <h2>Join EPL Fan Club</h2>
+    <form id="fanForm">
+      <label>Name: <input type="text" id="name"></label><br>
+      <label>Email: <input type="text" id="email"></label><br>
+      <label>Password: <input type="password" id="password"></label><br>
+      <button type="submit">Join</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
